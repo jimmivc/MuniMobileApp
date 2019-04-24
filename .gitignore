@@ -75,3 +75,4 @@ tmp/
 typings/
 report/
 test-results.xml
+package-lock.json

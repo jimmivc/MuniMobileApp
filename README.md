@@ -6,6 +6,8 @@
 
 ``` bash
 # Install dependencies
+npm install -g nativescript
+npm install -g @vue/cli @vue/cli-init
 npm install
 
 # Build for production

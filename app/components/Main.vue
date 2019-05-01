@@ -1,34 +1,31 @@
 <template>
     <Page actionBarHidden="true">
         <StackLayout columns="*" rows="*">
-            <Image src="~/assets/images/logo_muni_santa_ana.jpg"/>
-
+            <Label class="message" :text="msg"/>
+            <Button text="Button" @tap="onButtonTap"/>
         </StackLayout>
     </Page>
 </template>
 
 <script lang="ts">
+    import * as appSettings from "tns-core-modules/application-settings";
+
     export default {
+
         methods: {
             onButtonTap() {
-                console.log("Button was pressed");
+                appSettings.setBoolean('skipLogin',false);
             },
         },
+        name: "Main",
         data() {
             return {
-                txtEmail: "",
-                txtPass: "",
-                msg: 'Hello World!'
+                msg: 'This is the main screen'
             }
         }
     }
 </script>
 
 <style scoped>
-    ActionBar {
-        background-color: #53ba82;
-        color: #ffffff;
-    }
-
 
 </style>

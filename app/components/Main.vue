@@ -9,12 +9,14 @@
 
 <script lang="ts">
     import * as appSettings from "tns-core-modules/application-settings";
+    import LogIn from './LogIn.vue';
 
     export default {
 
         methods: {
             onButtonTap() {
-                appSettings.setBoolean('skipLogin',false);
+                appSettings.setBoolean('skipLogin', false);
+                this.$navigateTo(LogIn);
             },
         },
         name: "Main",

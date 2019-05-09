@@ -7,7 +7,7 @@ import * as appSettings from "tns-core-modules/application-settings";
 import VueDevtools from 'nativescript-vue-devtools';
 
 if(TNS_ENV !== 'production') {
-  Vue.use(VueDevtools);
+  // Vue.use(VueDevtools);
 }
 
 // Prints Vue logs when --env.production is *NOT* set while building

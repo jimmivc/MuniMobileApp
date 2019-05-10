@@ -4,8 +4,8 @@
 
             <Button horizontalAlignment="right" id="btnSkip" text="Saltar" @tap="skip"/>
 
-            <StackLayout orientation="vertical" marginTop="50">
-                <Image width="200" src="~/assets/images/psa_logo.png"/>
+            <StackLayout orientation="vertical" marginTop="20">
+                <Image width="200" marginBottom="10" src="~/assets/images/psa_logo.png"/>
                 <TextField v-model="txtEmail" hint="Correo"/>
                 <TextField v-model="txtPass" hint="Contraseña"/>
                 <Button text="Iniciar sesion" @tap="onButtonTap"/>
@@ -31,7 +31,6 @@
             return {
                 txtEmail: "",
                 txtPass: "",
-                msg: 'Hello World!'
             }
         }
     }

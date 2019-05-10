@@ -10,13 +10,18 @@
 // @see https://docs.nativescript.org/ui/styling
 
 button {
-  min-width: 52;
+  min-width: 50;
   border-radius: 20;
-  margin: 5;
-  background-color: #E0457A;
+  margin: 10;
+  //background-color: #E0457A;
+  background-color: #004557;
   color: white;
+  text-transform: none;
+  font-size: 15;
 }
 
 text-field{
-
+  padding: 10;
+  margin: 10;
+  border-color: #004557;
 }

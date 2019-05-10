@@ -1,6 +1,6 @@
 import Vue from 'nativescript-vue';
-import Main from './components/Main.vue';
-import LogIn from './components/LogIn.vue';
+import Main from './views/Main.vue';
+import LogIn from './views/LogIn.vue';
 import store from "./store";
 import * as appSettings from "tns-core-modules/application-settings";
 

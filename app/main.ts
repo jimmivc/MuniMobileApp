@@ -3,6 +3,7 @@ import Main from './views/Main.vue';
 import LogIn from './views/LogIn.vue';
 import store from "./store";
 import * as appSettings from "tns-core-modules/application-settings";
+require('nativescript-platform-css');
 
 import VueDevtools from 'nativescript-vue-devtools';
 

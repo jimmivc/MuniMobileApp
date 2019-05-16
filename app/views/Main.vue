@@ -2,7 +2,8 @@
     <Page actionBarHidden="true">
         <StackLayout columns="*" rows="*">
             <Label class="message" :text="msg"/>
-            <Button text="Button" @tap="onButtonTap"/>
+            <Button text="LogIn" @tap="goToLogIn"/>
+            <Button text="Create Event" @tap="goToCreateEvent"/>
         </StackLayout>
     </Page>
 </template>
@@ -10,11 +11,15 @@
 <script lang="ts">
     import * as appSettings from "tns-core-modules/application-settings";
     import LogIn from './LogIn.vue';
+    import CreateEvent from "./CreateEvent.vue";
 
     export default {
 
         methods: {
-            onButtonTap() {
+            goToCreateEvent() {
+                this.$navigateTo(CreateEvent)
+            },
+            goToLogIn() {
                 appSettings.setBoolean('skipLogin', false);
                 this.$navigateTo(LogIn);
             },

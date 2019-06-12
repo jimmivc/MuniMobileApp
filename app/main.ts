@@ -4,7 +4,9 @@ import LogIn from './views/LogIn.vue';
 import store from "./store";
 import * as appSettings from "tns-core-modules/application-settings";
 require('nativescript-platform-css');
-import DateTimePicker from 'nativescript-datetimepicker/vue'
+import DateTimePicker from "nativescript-datetimepicker/vue";
+// @ts-ignore
+Vue.use(DateTimePicker);
 
 import VueDevtools from 'nativescript-vue-devtools';
 import CreateEvent from "./views/CreateEvent.vue";
@@ -13,7 +15,6 @@ import CreateEvent from "./views/CreateEvent.vue";
 if(TNS_ENV !== 'production') {
   Vue.use(VueDevtools);
 }
-Vue.use(DateTimePicker);
 
 // Prints Vue logs when --env.production is *NOT* set while building
 Vue.config.silent = (TNS_ENV === 'production');

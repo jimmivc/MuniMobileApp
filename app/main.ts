@@ -24,6 +24,6 @@ console.log(skipLogIn);
 
 new Vue({
   store,
-  // render: h => h('frame',[h(skipLogIn?Main:LogIn)])
-  render: h => h('frame',[h(CreateEvent)])
+  render: h => h('frame',[h(skipLogIn?Main:LogIn)])
+  // render: h => h('frame',[h(CreateEvent)])
 }).$start();

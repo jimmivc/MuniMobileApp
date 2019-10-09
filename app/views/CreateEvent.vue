@@ -3,7 +3,7 @@
         <StackLayout orientation="vertical">
 
             <GridLayout rows="auto" columns="*">
-                <Button text="Back" @tap="onButtonTap" row="0" horizontalAlignment="left"/>
+                <Button text="Back" @tap="$navigateBack" row="0" horizontalAlignment="left"/>
                 <Button text="Create" @tap="onButtonTap" row="0" horizontalAlignment="right"/>
 
             </GridLayout>
